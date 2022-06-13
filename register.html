@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+	<head>
+		<title>CLIENT REGISTRATION </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script language="javascript">
+function validate()
+{
+	var Postcode=document.forms[0].Postcode.value;
+	var Phoneno=document.forms[0].Phoneno.value;
+	var mobileno=document.forms[0].mobileno.value;
+	 if (isNaN(Phoneno) || Phoneno=="")
+	{
+		alert("only digits are allowed at Phoneno ");
+		document.forms[0].Phoneno.focus();
+		document.forms[0].Phoneno.value="";
+		return false;
+	}
+	 if (isNaN(mobileno) || mobileno=="")
+	{
+		alert("only digits are allowed at Mobileno");
+		document.forms[0].mobileno.focus();
+		document.forms[0].mobileno.value="";
+		return false;
+	}
+	 if (isNaN(Postcode) || Postcode=="")
+	{
+		alert("only digits are allowed at Postcode");
+		document.forms[0].Postcode.focus();
+		document.forms[0].Postcode.value="";
+		return false;
+	}
+	
+	
+	
+	
+	
+}
+ 
+</script>
+
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="home.cfm" class="logo">Sindbad</a>
+					<nav id="nav">
+							<a href="home.cfm">Home</a>							
+							<a href="query.html">Queries</a>						</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+			<section id="main" >
+				<div class="inner">
+					<header class="major special">
+						<h1>CREATE AN ACCOUNT</h1>
+						<p>Join us and be part of the Sindbad family</p>
+					</header>
+					
+					
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<div class="inner">
+					<header>
+						<h2>ENTER THE DETAILS</h2>
+					</header>
+					<form id="form" name="form" method="post" action="Addclient.cfm"onsubmit="return validate()" >
+						<div class="field half first">
+							<label for="Fname">Forename</label>
+							<input type="text" name="Fname" id="Fname" required/>
+						</div>
+						<div class="field half first">
+							<label for="Sname">Surname</label>
+							<input type="text" name="Sname" id="Sname" required />
+						</div>
+						<div class="field half first">
+							<label for="Addressline1">Address line 1</label>
+							<input type="text" name="Addressline1" id="Addressline1" required />
+						</div>
+						<div class="field half first">
+							<label for="Addressline2">Address line 2</label>
+							<input type="text" name="Addressline2" id="Addressline2" />
+						</div>
+						<div class="field half first">
+							<label for="Town">Town</label>
+							<input type="text" name="Town" id="Town" required/>
+						</div>
+						<div class="field half first">
+							<label for="Postcode">Postcode</label>
+							<input type="text" name="Postcode" id="Postcode" required/>
+						</div>
+						<div class="field half first">
+							<label for="EmailAddress">Email</label>
+							<input type="email" name="Email" id="Email" required/>
+						</div>
+						<div class="field half first">
+							<label for="Phoneno">Phone number</label>
+							<input type="text" name="Phoneno" id="Phoneno" required/>
+						</div>
+						<div class="field half first">
+							<label for="mobileno">Mobile number</label>
+							
+							  <input type="text" name="mobileno" id="mobileno" />
+							  </div>
+							  <div class="field half first">
+						      <label for="Passwd">Password</label>
+						      <input type="Password" name="Passwd" id="Passwd" />
+							  </div>
+									
+						
+						
+
+						 <label>
+						<input type="submit" name="Submit" value="Submit" />
+						</label>
+					</form>
+					After successful registration you will be redirected to the Queries page.Thank You
+					<div class="copyright">
+						&copy; SINDBAD REAL ESTATE
+						<p>Note:Please create an account inorder to make a purchase through the sindbad real estate website </p>
+					</div>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
